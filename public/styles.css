@@ -7,6 +7,7 @@ body {
   color: black;
   font-family: 'Darker Grotesque', sans-serif;
   font-size: 20px;
+  text-shadow: 6px 6px 8px white;
 }
 h5 {
   float: bottom;

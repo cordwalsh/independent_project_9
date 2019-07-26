@@ -31,4 +31,8 @@ class Dictionary
   end
 end
 
+def self.delete()
+  return @@posts
+end
+
 end

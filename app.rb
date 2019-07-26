@@ -40,3 +40,10 @@ post ('/update/:id')do
     Dictionary.edit(params[:id].to_i,params[:new_definition])
   redirect to ('/')
 end
+
+delete('/update/:id') do
+  @post = Dictionary.find(params[:id].to_i())
+  @post.delete()
+  @post = Dictionary.all
+    redirect to ('/')
+end
