@@ -10,3 +10,9 @@ class Dictionary
     @word = attributes.fetch(:word)
     @id = @@id_counter
   end
+
+  def self.all
+    return @@posts
+  end
+  
+end

@@ -1,15 +1,15 @@
 require('sinatra')
 require('sinatra/reloader')
 require('pry')
-require('./lib/learning')
+require('./lib/learn')
 also_reload('lib/**/*.rb')
 
-get ('/') do
+get ('/')do
   @learn = Dictionary.all
   erb :default
 end
 
-get ('/home') do
+get ('/home')do
   @learn = Dictionary.all
   erb :default
 end
