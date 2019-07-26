@@ -44,6 +44,6 @@ end
 delete('/update/:id') do
   @post = Dictionary.find(params[:id].to_i())
   @post.delete()
-  @post = Dictionary.all
-    redirect to ('/')
+  @posts = Dictionary.all
+  erb(:default)
 end
