@@ -5,7 +5,8 @@ body {
   background-position: center;
   text-align: center;
   color: black;
-  text-shadow: 6px 6px 10px white;
+  font-family: 'Darker Grotesque', sans-serif;
+  font-size: 20px;
 }
 h5 {
   float: bottom;
@@ -21,4 +22,10 @@ h5 {
   top: 30%;
   left: 48.5%;
   transform: translate(-50%, -50%);
+}
+
+h1 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 60px;
+  text-shadow: 6px 6px 10px blue;
 }
