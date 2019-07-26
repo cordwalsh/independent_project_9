@@ -25,3 +25,18 @@ post ('/')do
   @learn = Dictionary.all
   redirect to('/')
 end
+
+get ('/post/:id')do
+  @post = Dictionary.search(params[:id].to_i)
+  erb :post
+end
+
+get ('/post/:id/edit')do
+  @post = Dictionary.search(params[:id].to_i)
+  erb :edit_post
+end
+
+post ('/update/:id')do
+    Dictionary.edit(params[:id].to_i,params[:new_definition])
+  redirect to ('/')
+end

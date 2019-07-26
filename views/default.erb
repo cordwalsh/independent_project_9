@@ -1,3 +1,16 @@
 <div>
   <a href="/new_word">Feed Me</a>
 </div>
+
+
+
+<%if @learn.any? == true %>
+  <% @learn.each do |dictionary| %>
+  <div class="user_post">
+    <p>word: <%= dictionary.word %></p>
+    <a href="/post/<%= dictionary.id %>">View Definition</a>
+  </div>
+  <% end %>
+<% else %>
+<p>Post something!</p>
+<% end %>
