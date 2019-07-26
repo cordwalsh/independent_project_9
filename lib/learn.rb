@@ -23,4 +23,12 @@ class Dictionary
   (@@posts.select {|dictionary| dictionary.id == id})[0].definition = new_definition
   end
 
+  def self.search(id)
+  @@posts.each do |post|
+    if post.id == id
+      return post
+    end
+  end
+end
+
 end

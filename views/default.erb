@@ -1,5 +1,5 @@
 <div>
-  <a href="/new_word">Feed Me</a>
+  <a href="/new_word">Feed Me!</a>
 </div>
 
 
@@ -9,6 +9,7 @@
   <div class="user_post">
     <p>word: <%= dictionary.word %></p>
     <a href="/post/<%= dictionary.id %>">View Definition</a>
+    <a href="/post/<%= dictionary.id %>/edit">Edit Definition</a>
   </div>
   <% end %>
 <% else %>

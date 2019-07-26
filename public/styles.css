@@ -10,3 +10,15 @@ body {
 h5 {
   float: bottom;
 }
+.post {
+  background-color: white;
+  width: 300px;
+  border: 5px solid lightblue;
+  padding: 50px;
+  margin: 20px;
+  text-align: center;
+  position: fixed;
+  top: 30%;
+  left: 48.5%;
+  transform: translate(-50%, -50%);
+}
