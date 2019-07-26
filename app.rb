@@ -1,0 +1,5 @@
+require('sinatra')
+require('sinatra/reloader')
+require('pry')
+require('./lib/learning')
+also_reload('lib/**/*.rb')
