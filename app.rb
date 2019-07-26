@@ -43,7 +43,7 @@ end
 
 delete('/update/:id') do
   @post = Dictionary.find(params[:id].to_i())
-  @post.delete()
+  @post.delete
   @posts = Dictionary.all
   erb(:default)
 end

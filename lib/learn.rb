@@ -25,11 +25,20 @@ class Dictionary
 
   def self.search(id)
   @@posts.each do |post|
-    if post.id == id
-      return post
+      if post.id == id
+        return post
+      end
     end
   end
-end
+
+  def delete
+    @@posts.delete(self.id)
+  end
+
+  def self.find(id)
+   @@posts[id]
+  end
+
 
 
 
