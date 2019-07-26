@@ -1,15 +1,12 @@
 body {
-  background-image: url(https://blog.spoongraphics.co.uk/wp-content/uploads/2012/11/Untitled-12.jpg);
+  background-image: url(https://i.pinimg.com/originals/ea/a1/88/eaa188c45401f7ad5af873ba272065da.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
   text-align: center;
   color: black;
   text-shadow: 6px 6px 10px white;
 }
-.header {
-  .header {
-  padding: 60px;
-  text-align: center;
-  background: #1abc9c;
-  color: white;
-  font-size: 30px;
-}
+h5 {
+  float: bottom;
 }

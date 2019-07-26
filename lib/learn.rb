@@ -14,5 +14,8 @@ class Dictionary
   def self.all
     return @@posts
   end
-  
+
+  def self.add(dictionary)
+    @@posts.push(dictionary)
+  end
 end
