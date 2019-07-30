@@ -15,28 +15,32 @@ class Dictionary
     return @@posts
   end
 
+  def self.any
+    return @@posts
+  end
+
   def self.add(dictionary)
     @@posts.push(dictionary)
   end
 
   def self.edit(id, new_definition)
-  (@@posts.select {|dictionary| dictionary.id == id})[0].definition = new_definition
+    (@@posts.select {|dictionary| dictionary.id == id})[0].definition = new_definition
   end
 
   def self.search(id)
-  @@posts.each do |post|
+    @@posts.each do |post|
       if post.id == id
         return post
       end
     end
   end
 
-  def delete
+  def self.delete(id)
     @@posts.delete(self.id)
   end
 
   def self.find(id)
-   @@posts[id]
+    @@posts[id]
   end
 
 
