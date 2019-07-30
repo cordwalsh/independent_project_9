@@ -35,7 +35,7 @@ class Dictionary
     end
   end
 
-  def self.delete(id)
+  def delete()
     @@posts.delete(self.id)
   end
 
