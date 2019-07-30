@@ -41,6 +41,8 @@ post ('/update/:id')do
   redirect to ('/')
 end
 
+# maybe add delete button to the words page to delete word and not just definition
+
 delete('/update/:id') do
   @post = Dictionary.find(params[:id].to_i())
   @post.delete
