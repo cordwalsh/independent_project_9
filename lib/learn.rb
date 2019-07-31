@@ -43,7 +43,4 @@ class Dictionary
     @@posts[id]
   end
 
-
-
-
 end
